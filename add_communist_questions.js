@@ -69,7 +69,7 @@ if (typeof window !== 'undefined') {
     // 在浏览器环境中，将问题添加到全局questions数组
     if (window.questions && Array.isArray(window.questions)) {
         // 添加新问题到现有题库
-        window.questions = [...window.questions, ...communistQuestions];
+        window.questions.push(...communistQuestions);
         console.log('中国共产党相关问题已成功添加到题库！');
     } else {
         console.error('未找到全局questions数组，无法添加问题。');
