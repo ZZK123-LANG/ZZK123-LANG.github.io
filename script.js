@@ -407,7 +407,7 @@ const progressFill = document.getElementById('progressFill');
 
 // 初始化
 document.addEventListener('DOMContentLoaded', function() {
-    totalQuestionsElement.textContent = '10';
+    totalQuestionsElement.textContent = '5';
     startBtn.addEventListener('click', startGame);
     nextBtn.addEventListener('click', nextQuestion);
     restartBtn.addEventListener('click', restartGame);
@@ -420,8 +420,8 @@ function startGame() {
     currentQuestionIndex = 0;
     userAnswers = [];
     
-    // 随机选择10个问题
-    selectedQuestions = getRandomQuestions(10);
+    // 随机选择5个问题
+    selectedQuestions = getRandomQuestions(5);
     
     // 隐藏开始按钮，显示下一题按钮
     startBtn.style.display = 'none';
@@ -486,7 +486,7 @@ function selectAnswer(selectedIndex) {
     
     // 更新分数
     if (selectedIndex === question.correct) {
-        score += 10;
+        score += 20;
     }
     
     // 显示解释
