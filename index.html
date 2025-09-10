@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2025年九月三号阅兵知识问答</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <h1 class="title">🇨🇳 2025年九月三号阅兵知识问答</h1>
+                <p class="subtitle">纪念中国人民抗日战争暨世界反法西斯战争胜利80周年</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="question-counter">
+                    <span id="currentQuestion">1</span> / <span id="totalQuestions">5</span>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <div class="quiz-container" id="quizContainer">
+                <div class="question-section">
+                    <div class="question-card">
+                        <h2 class="question-text" id="questionText">
+                            点击"开始答题"按钮开始测试
+                        </h2>
+                        <div class="options-container" id="optionsContainer">
+                            <!-- 选项将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="controls-section">
+                    <button class="btn btn-primary" id="startBtn">开始答题</button>
+                    <button class="btn btn-secondary" id="nextBtn" style="display: none;">下一题</button>
+                    <button class="btn btn-secondary" id="restartBtn" style="display: none;">重新开始</button>
+                </div>
+                
+                <div class="score-section" id="scoreSection" style="display: none;">
+                    <div class="score-card">
+                        <h2 class="score-title">答题结果</h2>
+                        <div class="score-display">
+                            <div class="score-circle">
+                                <span class="score-number" id="scoreNumber">0</span>
+                                <span class="score-label">分</span>
+                            </div>
+                            <div class="score-details">
+                                <div class="score-item">
+                                    <span class="score-label">正确率</span>
+                                    <span class="score-value" id="accuracy">0%</span>
+                                </div>
+                                <div class="score-item">
+                                    <span class="score-label">答对题数</span>
+                                    <span class="score-value" id="correctCount">0</span>
+                                </div>
+                                <div class="score-item">
+                                    <span class="score-label">答错题数</span>
+                                    <span class="score-value" id="wrongCount">0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="score-message" id="scoreMessage">
+                            <!-- 评分消息将通过JavaScript动态生成 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p class="footer-text">纪念中国人民抗日战争暨世界反法西斯战争胜利80周年</p>
+            <p class="footer-text">铭记历史，珍爱和平，开创未来</p>
+        </footer>
+    </div>
+    
+    <script src="add_communist_questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
